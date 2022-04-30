@@ -7,7 +7,7 @@ function adelante(){
        return num=1;}
        else {
         let foto = document.getElementById("foto");
-        foto.src = "./Imagenes/img/img"+num+".jpg";}
+        foto.src = "./Imagenes/Imagenes del carrousel/img"+num+".jpg";}
     
 }
 
@@ -17,7 +17,7 @@ function atras(){
     return num=5;}
     else{    
     let foto = document.getElementById("foto");
-    foto.src = "img/img" +num+ ".jpg";}  
+    foto.src = "./Imagenes/Imagenes del carrousel/img" +num+ ".jpg";}  
     }
 
 
@@ -31,15 +31,28 @@ function desactivarreproduccionAutomatica(){
 }
 document.getElementById("animacionacercade").animate([
     
-    { transform: 'translateY(0px)' },
-    { transform: 'translateY(-600px)' }
+    { transform: 'translateY(-600px)' },
+    { transform: 'translateY(0px)' }
   ], {
     
-    duration: 6000,
+    duration: 4000,
     
   });
 
-  
+  function animacion_footer(){
+      document.getElementById("footer").style.borderRadius = "40% 40% 0% 0%";
+      document.getElementById("footer").style.paddingTop = "5%";
+      document.getElementById("pie de pagina").animate([
+          { transform: "translateY(0px)"},
+          { transform: "translateY(-100px)"},
+          { transform: "translateY(-0px)"},
+          { transform: "translateY(10px)"}
+          
+      ],{ 
+      duration: 2000
+      
+    });
+      
+  }
 
- 
-   
+  
