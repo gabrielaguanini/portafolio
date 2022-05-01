@@ -40,19 +40,10 @@ document.getElementById("animacionacercade").animate([
   });
 
   function animacion_footer(){
-      document.getElementById("footer").style.borderRadius = "40% 40% 0% 0%";
-      document.getElementById("footer").style.paddingTop = "5%";
-      document.getElementById("pie de pagina").animate([
-          { transform: "translateY(0px)"},
-          { transform: "translateY(-100px)"},
-          { transform: "translateY(-0px)"},
-          { transform: "translateY(10px)"}
-          
-      ],{ 
-      duration: 2000
-      
-    });
-      
-  }
-
-  
+        document.getElementById("pie de pagina").animate([
+        { transform: "rotate3d(1, 0, 0, 360deg"}],{ 
+    duration: 2000
+    
+  });
+       
+}
