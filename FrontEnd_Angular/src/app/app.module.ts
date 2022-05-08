@@ -7,7 +7,7 @@ import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { TrabajosComponent } from './componentes/trabajos/trabajos.component';
 import { PieDePaginaComponent } from './componentes/pie-de-pagina/pie-de-pagina.component';
 import { TrabajosDesarrolladoComponent } from './componentes/trabajos-desarrollado/trabajos-desarrollado.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
 {path:'trabajos-desarrollado',component: TrabajosDesarrolladoComponent},
@@ -23,13 +23,14 @@ const routes: Routes = [
     AcercaDeComponent,
     TrabajosComponent,
     PieDePaginaComponent,
-    TrabajosDesarrolladoComponent,
+    TrabajosDesarrolladoComponent
     
   
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)   
+    RouterModule.forRoot(routes),
+    HttpClientModule   
     
   ],
   providers: [],
