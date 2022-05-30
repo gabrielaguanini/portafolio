@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var Aeroplano_1 = require("./Aeroplano");
+var Helice_1 = require("./Helice");
+var Alas_1 = require("./Alas");
+var Cabina_1 = require("./Cabina");
+var Turbina_1 = require("./Turbina");
+var h = new Helice_1.Helice(2);
+var a = new Alas_1.Alas(2);
+var c = new Cabina_1.Cabina(true, false, true, 5, 3);
+var t = new Turbina_1.Turbina(2);
+var aeroplano = new Aeroplano_1.Aeroplano(h, a, c, t);
+console.log(aeroplano.toString());
