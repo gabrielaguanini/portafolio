@@ -1,0 +1,21 @@
+<h1>Datos de la Persona</h1>
+<form action=" " method=" ">
+	<p><label>Dni: </label><input type="text" name="Dni"></p>
+	<p><label>Nombre: </label><input type="text" name="Nombre"></p>
+	<p><label>Apellido: </label><input type="text" name="Apellido"></p>
+	<p><label>Teléfono: </label><input type="text" name="Telefono"></p>
+	<button type="submit">Enviar</button>
+</form>
+
+<h1>Ver lista de Personas</h1>
+<p>Si desea ver todas las personas haga click en el botón mostrar personas</p>
+<form action=" " method=" ">
+	<button type="submit">Mostrar Personas</button>
+</form>
+
+<h1>Eliminar Personas</h1>
+<p>Ingrese el DNI de la persona a eliminar</p>
+<form action=" " method=" ">
+	<p><label>Dni:</label><input type="text" name="dni_elim"></p>
+	<button type="submit">Eliminar</button>
+</form>
