@@ -44,26 +44,39 @@ public class Controller {
   
 @DeleteMapping ("/borrar")
 public void borrarPersona(@RequestParam Long posicion){
-
-    
-   int miPosicionInt= Math.toIntExact(posicion);
-    
- listaPersonas.remove(miPosicionInt);
+  int miPosicionInt= Math.toIntExact(posicion);
+  listaPersonas.remove(miPosicionInt);
   
 }
 
+@DeleteMapping ("/borrar2/{posicion}")
+public void borrarPersona2( @PathVariable Long posicion){
 
+   int miPosicionInt2= Math.toIntExact(posicion);
+    
+ listaPersonas.remove(miPosicionInt2);
+  
+}
 
 @PutMapping ("/editar")
 public void editarPersona(@RequestParam Long posicion, @RequestBody Persona pers){
 
- int miPosicionInt2= Math.toIntExact(posicion);    
+ int miPosicionInt3= Math.toIntExact(posicion);    
     
-listaPersonas.set(miPosicionInt2, pers);
+listaPersonas.set(miPosicionInt3, pers);
  
  
 }
 
+@PutMapping ("/editar2/{posicion}")
+public void editarPersona2(@PathVariable Long posicion, @RequestBody Persona pers){
+
+ int miPosicionInt4= Math.toIntExact(posicion);    
+    
+listaPersonas.set(miPosicionInt4, pers);
+ 
+ 
+}
 
 }
 
